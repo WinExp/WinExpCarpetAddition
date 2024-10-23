@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "wca",
+  "version": "${version}",
+  "name": "WinExpCarpetAddition",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/wca/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.winexp.winexpcarpetaddition.client.WinExpCarpetAdditionClient"
+    ],
+    "main": [
+      "com.github.winexp.winexpcarpetaddition.WinExpCarpetAddition"
+    ]
+  },
+  "mixins": [
+    "wca.mixins.json",
+    {
+      "config": "wca.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
