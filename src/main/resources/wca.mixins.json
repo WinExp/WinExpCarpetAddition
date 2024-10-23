@@ -4,6 +4,7 @@
   "package": "com.github.winexp.winexpcarpetaddition.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "fancyOakGrownFix.LargeOakTrunkPlacerMixin"
   ],
   "injectors": {
     "defaultRequire": 1
